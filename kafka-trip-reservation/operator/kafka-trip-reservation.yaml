@@ -1,0 +1,33 @@
+#Strimzi operator should be pre-installed in namespace
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoInfra
+metadata:
+  name: kogito-kafka-infra
+spec:
+  resource:
+    apiVersion: kafka.strimzi.io/v1beta1
+    kind: Kafka
+---
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoBuild
+metadata:
+  name: kafka-trip-reservation
+spec:
+  type: RemoteSource
+  #env:
+  # env can be used to set variables during build
+  #- name: MY_CUSTOM_ENV
+  #  value: "my value"
+  gitSource:
+    contextDir: kafka-trip-reservation
+    uri: 'https://github.com/ruromero/saga'
+  # set your maven nexus repository to speed up the build time
+  #mavenMirrorURL:
+---
+apiVersion: app.kiegroup.org/v1beta1
+kind: KogitoRuntime
+metadata:
+  name: kafka-trip-reservation
+spec:
+  infra:
+    - kogito-kafka-infra
