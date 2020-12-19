@@ -1,0 +1,59 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orders
+  labels:
+    app: kafka-sagas-orders
+spec:
+  selector:
+    matchLabels:
+      app: kafka-sagas-orders
+  template:
+    metadata:
+      labels:
+        app: kafka-sagas-orders
+    spec:
+      containers:
+      - name: orders
+        image: image-registry.openshift-image-registry.svc:5000/ruben/kafka-orders:latest
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        env:
+        - name: ENABLE_EVENTS
+          value: "true"
+        - name: KOGITO_DATAINDEX_HTTP_URL
+          value: http://data-index-ruben.apps.mw-ocp4.cloud.lab.eng.bos.redhat.com
+        - name: KOGITO_DATAINDEX_WS_URL
+          value: ws://data-index-ruben.apps.mw-ocp4.cloud.lab.eng.bos.redhat.com
+        - name: KOGITO_SERVICE_URL
+          value: http://kafka-orders-ruben.apps.mw-ocp4.cloud.lab.eng.bos.redhat.com
+        - name: NAMESPACE
+          value: ruben
+        volumeMounts:
+        - mountPath: /deployments/config
+          name: app-prop-config
+          readOnly: true
+      volumes:
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: application.properties
+            path: application.properties
+          name: reservations-properties
+        name: app-prop-config
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orders
+spec:
+  selector:
+    app: kafka-sagas-orders
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

@@ -1,4 +1,4 @@
-package org.acme.travel;
+package org.acme.sagas.model;
 
 public class Reservation {
 

@@ -1,0 +1,45 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reservations
+  labels:
+    app: kafka-sagas-reservations
+spec:
+  selector:
+    matchLabels:
+      app: kafka-sagas-reservations
+  template:
+    metadata:
+      labels:
+        app: kafka-sagas-reservations
+    spec:
+      containers:
+      - name: reservations
+        image: image-registry.openshift-image-registry.svc:5000/ruben/reservations:latest
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /deployments/config
+          name: app-prop-config
+          readOnly: true
+      volumes:
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: application.properties
+            path: application.properties
+          name: reservations-properties
+        name: app-prop-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reservations
+spec:
+  selector:
+    app: kafka-sagas-reservations
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
