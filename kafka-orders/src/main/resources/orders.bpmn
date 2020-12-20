@@ -1,4 +1,4 @@
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_FfouYCRtEDmsw8UZgDdwSA" exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_wVAAkCUEEDmijMpQaf44fA" exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_eventItem" structureRef="org.acme.sagas.model.OrderEvent"/>
   <bpmn2:itemDefinition id="_stockItem" structureRef="org.acme.sagas.model.Reservation"/>
   <bpmn2:itemDefinition id="_paymentItem" structureRef="org.acme.sagas.model.Reservation"/>
@@ -33,21 +33,21 @@
   <bpmn2:itemDefinition id="ShipmentConfirmedType" structureRef="org.acme.sagas.model.Reservation"/>
   <bpmn2:itemDefinition id="__D7FACA27-B011-412A-AD35-2991559A4D49_eventInputXItem" structureRef="org.acme.sagas.model.OrderEvent"/>
   <bpmn2:itemDefinition id="OrderConfirmedType" structureRef="org.acme.sagas.model.OrderEvent"/>
-  <bpmn2:message id="_FfqjkCRtEDmsw8UZgDdwSA" itemRef="RequestStockType" name="RequestStock"/>
-  <bpmn2:message id="_FfqjkSRtEDmsw8UZgDdwSA" itemRef="RequestPaymentType" name="RequestPayment"/>
-  <bpmn2:message id="_FfqjkiRtEDmsw8UZgDdwSA" itemRef="RequestShipmentType" name="RequestShipment"/>
-  <bpmn2:message id="_FfqjkyRtEDmsw8UZgDdwSA" itemRef="CancelStockType" name="CancelStock"/>
-  <bpmn2:message id="_FfqjlCRtEDmsw8UZgDdwSA" itemRef="CancelPaymentType" name="CancelPayment"/>
-  <bpmn2:message id="_FfqjlSRtEDmsw8UZgDdwSA" itemRef="CancelShipmentType" name="CancelShipment"/>
-  <bpmn2:message id="_FfqjliRtEDmsw8UZgDdwSA" itemRef="OrderRejectedType" name="OrderRejected"/>
-  <bpmn2:message id="_FfqjlyRtEDmsw8UZgDdwSA" itemRef="RequestOrderType" name="RequestOrder"/>
-  <bpmn2:message id="_FfrKoCRtEDmsw8UZgDdwSA" itemRef="StockRejectedType" name="StockRejected"/>
-  <bpmn2:message id="_FfrKoSRtEDmsw8UZgDdwSA" itemRef="StockConfirmedType" name="StockConfirmed"/>
-  <bpmn2:message id="_FfrKoiRtEDmsw8UZgDdwSA" itemRef="PaymentRejectedType" name="PaymentRejected"/>
-  <bpmn2:message id="_FfrKoyRtEDmsw8UZgDdwSA" itemRef="PaymentConfirmedType" name="PaymentConfirmed"/>
-  <bpmn2:message id="_FfrKpCRtEDmsw8UZgDdwSA" itemRef="ShipmentRejectedType" name="ShipmentRejected"/>
-  <bpmn2:message id="_FfrKpSRtEDmsw8UZgDdwSA" itemRef="ShipmentConfirmedType" name="ShipmentConfirmed"/>
-  <bpmn2:message id="_FfrKpiRtEDmsw8UZgDdwSA" itemRef="OrderConfirmedType" name="OrderConfirmed"/>
+  <bpmn2:message id="_wVB1wCUEEDmijMpQaf44fA" itemRef="RequestStockType" name="RequestStock"/>
+  <bpmn2:message id="_wVB1wSUEEDmijMpQaf44fA" itemRef="RequestPaymentType" name="RequestPayment"/>
+  <bpmn2:message id="_wVB1wiUEEDmijMpQaf44fA" itemRef="RequestShipmentType" name="RequestShipment"/>
+  <bpmn2:message id="_wVB1wyUEEDmijMpQaf44fA" itemRef="CancelStockType" name="CancelStock"/>
+  <bpmn2:message id="_wVB1xCUEEDmijMpQaf44fA" itemRef="CancelPaymentType" name="CancelPayment"/>
+  <bpmn2:message id="_wVB1xSUEEDmijMpQaf44fA" itemRef="CancelShipmentType" name="CancelShipment"/>
+  <bpmn2:message id="_wVB1xiUEEDmijMpQaf44fA" itemRef="OrderRejectedType" name="OrderRejected"/>
+  <bpmn2:message id="_wVB1xyUEEDmijMpQaf44fA" itemRef="RequestOrderType" name="RequestOrder"/>
+  <bpmn2:message id="_wVB1yCUEEDmijMpQaf44fA" itemRef="StockRejectedType" name="StockRejected"/>
+  <bpmn2:message id="_wVB1ySUEEDmijMpQaf44fA" itemRef="StockConfirmedType" name="StockConfirmed"/>
+  <bpmn2:message id="_wVCc0CUEEDmijMpQaf44fA" itemRef="PaymentRejectedType" name="PaymentRejected"/>
+  <bpmn2:message id="_wVCc0SUEEDmijMpQaf44fA" itemRef="PaymentConfirmedType" name="PaymentConfirmed"/>
+  <bpmn2:message id="_wVCc0iUEEDmijMpQaf44fA" itemRef="ShipmentRejectedType" name="ShipmentRejected"/>
+  <bpmn2:message id="_wVCc0yUEEDmijMpQaf44fA" itemRef="ShipmentConfirmedType" name="ShipmentConfirmed"/>
+  <bpmn2:message id="_wVCc1CUEEDmijMpQaf44fA" itemRef="OrderConfirmedType" name="OrderConfirmed"/>
   <bpmn2:process id="orders" drools:packageName="org.acme.sagas" drools:version="1.0" drools:adHoc="false" name="orders" isExecutable="true" processType="Public">
     <bpmn2:property id="event" itemSubjectRef="_eventItem" name="event"/>
     <bpmn2:property id="stock" itemSubjectRef="_stockItem" name="stock"/>
@@ -73,8 +73,8 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_5C897BF8-0D53-46B0-A2C4-317F176F14F5" sourceRef="_4D8A69D8-204F-4B2E-8A37-B47229889B8D" targetRef="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820"/>
     <bpmn2:sequenceFlow id="_71C19E44-E156-4D03-A0EC-A5EC244B5363" sourceRef="_4D8A69D8-204F-4B2E-8A37-B47229889B8D" targetRef="_A6CAB402-8F2C-433A-B296-8989E7D9D0DE"/>
+    <bpmn2:sequenceFlow id="_5C897BF8-0D53-46B0-A2C4-317F176F14F5" sourceRef="_4D8A69D8-204F-4B2E-8A37-B47229889B8D" targetRef="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820"/>
     <bpmn2:sequenceFlow id="_E70FCB69-733E-4782-B1B2-2EB76A2904B1" sourceRef="_1D2F2B30-9561-466E-9756-B864C5457ADF" targetRef="_9C79ADBD-6255-4A74-BA5C-2120A68C2E85">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
@@ -85,8 +85,8 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_AB1BDAB4-468E-4824-BDD9-4BE42EE61D1A" sourceRef="_CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" targetRef="_9B9721C4-384B-4011-93A1-466531C2C2AF"/>
     <bpmn2:sequenceFlow id="_B13E4DF4-23B1-403C-A539-76A581386AFE" sourceRef="_CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" targetRef="_1D2F2B30-9561-466E-9756-B864C5457ADF"/>
+    <bpmn2:sequenceFlow id="_AB1BDAB4-468E-4824-BDD9-4BE42EE61D1A" sourceRef="_CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" targetRef="_9B9721C4-384B-4011-93A1-466531C2C2AF"/>
     <bpmn2:sequenceFlow id="_BC587BEF-BBDE-4215-AA0E-B731927E734D" sourceRef="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54" targetRef="_CC811C3D-5280-420C-97B9-C20FC342DD30">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.source">
@@ -97,8 +97,8 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:sequenceFlow id="_9B801B64-94E1-4EC7-8CE1-5BE53EF40356" sourceRef="_F2A24235-DAD2-4154-8964-A280A03759C1" targetRef="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54"/>
     <bpmn2:sequenceFlow id="_4746AE21-5400-4C23-81BD-0011C60FD8F0" sourceRef="_F2A24235-DAD2-4154-8964-A280A03759C1" targetRef="_932D0141-2BB7-41F4-B047-3083B15EED73"/>
+    <bpmn2:sequenceFlow id="_9B801B64-94E1-4EC7-8CE1-5BE53EF40356" sourceRef="_F2A24235-DAD2-4154-8964-A280A03759C1" targetRef="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54"/>
     <bpmn2:sequenceFlow id="_31242BC8-7DFD-4F6F-B075-12282C736966" sourceRef="_7A95123D-7AD5-4D9D-8B59-379DB384CC38" targetRef="_D5C3426F-7C22-4745-9417-A962BD878BE4">
       <bpmn2:extensionElements>
         <drools:metaData name="isAutoConnection.target">
@@ -146,15 +146,30 @@
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:sequenceFlow>
-    <bpmn2:endEvent id="_9C79ADBD-6255-4A74-BA5C-2120A68C2E85">
+    <bpmn2:endEvent id="_9C79ADBD-6255-4A74-BA5C-2120A68C2E85" name="Compensate Payment">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Compensate Payment]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_E70FCB69-733E-4782-B1B2-2EB76A2904B1</bpmn2:incoming>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:endEvent>
-    <bpmn2:endEvent id="_D3461D94-AF5A-4274-B225-A44DE0B9FCCB">
+    <bpmn2:endEvent id="_D3461D94-AF5A-4274-B225-A44DE0B9FCCB" name="Compensate Shipment">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Compensate Shipment]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_A2C7B225-FC7B-41A7-A6C7-1613F6A4E13A</bpmn2:incoming>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:endEvent>
-    <bpmn2:endEvent id="_D7FACA27-B011-412A-AD35-2991559A4D49">
+    <bpmn2:endEvent id="_D7FACA27-B011-412A-AD35-2991559A4D49" name="OrderConfirmed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[OrderConfirmed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_5953D8F9-39B1-4788-AC4A-930AF2EE1F6E</bpmn2:incoming>
       <bpmn2:dataInput id="_D7FACA27-B011-412A-AD35-2991559A4D49_eventInputX" drools:dtype="org.acme.sagas.model.OrderEvent" itemSubjectRef="__D7FACA27-B011-412A-AD35-2991559A4D49_eventInputXItem" name="event"/>
       <bpmn2:dataInputAssociation>
@@ -164,9 +179,14 @@
       <bpmn2:inputSet>
         <bpmn2:dataInputRefs>_D7FACA27-B011-412A-AD35-2991559A4D49_eventInputX</bpmn2:dataInputRefs>
       </bpmn2:inputSet>
-      <bpmn2:messageEventDefinition drools:msgref="OrderConfirmed" messageRef="_FfrKpiRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="OrderConfirmed" messageRef="_wVCc1CUEEDmijMpQaf44fA"/>
     </bpmn2:endEvent>
-    <bpmn2:intermediateCatchEvent id="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820">
+    <bpmn2:intermediateCatchEvent id="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820" name="ShipmentConfirmed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[ShipmentConfirmed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_5C897BF8-0D53-46B0-A2C4-317F176F14F5</bpmn2:incoming>
       <bpmn2:outgoing>_5953D8F9-39B1-4788-AC4A-930AF2EE1F6E</bpmn2:outgoing>
       <bpmn2:dataOutput id="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820_eventOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__86BF36C6-18AA-48F4-B8D5-CD3BA0668820_eventOutputXItem" name="event"/>
@@ -177,9 +197,14 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_86BF36C6-18AA-48F4-B8D5-CD3BA0668820_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="ShipmentConfirmed" messageRef="_FfrKpSRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="ShipmentConfirmed" messageRef="_wVCc0yUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:intermediateCatchEvent id="_A6CAB402-8F2C-433A-B296-8989E7D9D0DE">
+    <bpmn2:intermediateCatchEvent id="_A6CAB402-8F2C-433A-B296-8989E7D9D0DE" name="ShipmentRejected">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[ShipmentRejected]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_71C19E44-E156-4D03-A0EC-A5EC244B5363</bpmn2:incoming>
       <bpmn2:outgoing>_A2C7B225-FC7B-41A7-A6C7-1613F6A4E13A</bpmn2:outgoing>
       <bpmn2:dataOutput id="_A6CAB402-8F2C-433A-B296-8989E7D9D0DE_eventOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__A6CAB402-8F2C-433A-B296-8989E7D9D0DE_eventOutputXItem" name="event"/>
@@ -190,14 +215,19 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_A6CAB402-8F2C-433A-B296-8989E7D9D0DE_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="ShipmentRejected" messageRef="_FfrKpCRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="ShipmentRejected" messageRef="_wVCc0iUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
     <bpmn2:eventBasedGateway id="_4D8A69D8-204F-4B2E-8A37-B47229889B8D" gatewayDirection="Diverging">
       <bpmn2:incoming>_403749BE-6A2F-4941-B4E0-80AD5835A2D1</bpmn2:incoming>
-      <bpmn2:outgoing>_71C19E44-E156-4D03-A0EC-A5EC244B5363</bpmn2:outgoing>
       <bpmn2:outgoing>_5C897BF8-0D53-46B0-A2C4-317F176F14F5</bpmn2:outgoing>
+      <bpmn2:outgoing>_71C19E44-E156-4D03-A0EC-A5EC244B5363</bpmn2:outgoing>
     </bpmn2:eventBasedGateway>
-    <bpmn2:intermediateCatchEvent id="_9B9721C4-384B-4011-93A1-466531C2C2AF">
+    <bpmn2:intermediateCatchEvent id="_9B9721C4-384B-4011-93A1-466531C2C2AF" name="PaymentConfirmed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PaymentConfirmed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_AB1BDAB4-468E-4824-BDD9-4BE42EE61D1A</bpmn2:incoming>
       <bpmn2:outgoing>_8E017A23-ABF2-4E11-97CD-BF7606F543A2</bpmn2:outgoing>
       <bpmn2:dataOutput id="_9B9721C4-384B-4011-93A1-466531C2C2AF_eventOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__9B9721C4-384B-4011-93A1-466531C2C2AF_eventOutputXItem" name="event"/>
@@ -208,9 +238,14 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_9B9721C4-384B-4011-93A1-466531C2C2AF_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="PaymentConfirmed" messageRef="_FfrKoyRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="PaymentConfirmed" messageRef="_wVCc0SUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:intermediateCatchEvent id="_1D2F2B30-9561-466E-9756-B864C5457ADF">
+    <bpmn2:intermediateCatchEvent id="_1D2F2B30-9561-466E-9756-B864C5457ADF" name="PaymentRejected">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PaymentRejected]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_B13E4DF4-23B1-403C-A539-76A581386AFE</bpmn2:incoming>
       <bpmn2:outgoing>_E70FCB69-733E-4782-B1B2-2EB76A2904B1</bpmn2:outgoing>
       <bpmn2:dataOutput id="_1D2F2B30-9561-466E-9756-B864C5457ADF_PaymentRejectedOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__1D2F2B30-9561-466E-9756-B864C5457ADF_PaymentRejectedOutputXItem" name="PaymentRejected"/>
@@ -221,22 +256,32 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_1D2F2B30-9561-466E-9756-B864C5457ADF_PaymentRejectedOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="PaymentRejected" messageRef="_FfrKoiRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="PaymentRejected" messageRef="_wVCc0CUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
     <bpmn2:eventBasedGateway id="_CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" gatewayDirection="Diverging">
       <bpmn2:incoming>_80F0568C-7FB6-4279-96C8-178E0ED8969A</bpmn2:incoming>
-      <bpmn2:outgoing>_B13E4DF4-23B1-403C-A539-76A581386AFE</bpmn2:outgoing>
       <bpmn2:outgoing>_AB1BDAB4-468E-4824-BDD9-4BE42EE61D1A</bpmn2:outgoing>
+      <bpmn2:outgoing>_B13E4DF4-23B1-403C-A539-76A581386AFE</bpmn2:outgoing>
     </bpmn2:eventBasedGateway>
     <bpmn2:endEvent id="_E51F1034-4159-49E1-A69B-C87A153460F5">
       <bpmn2:incoming>_BAF32AF5-CC29-45F0-94EF-223245688CB5</bpmn2:incoming>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:endEvent>
-    <bpmn2:endEvent id="_CC811C3D-5280-420C-97B9-C20FC342DD30">
+    <bpmn2:endEvent id="_CC811C3D-5280-420C-97B9-C20FC342DD30" name="Compensate Stock">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Compensate Stock]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_BC587BEF-BBDE-4215-AA0E-B731927E734D</bpmn2:incoming>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:endEvent>
-    <bpmn2:intermediateCatchEvent id="_932D0141-2BB7-41F4-B047-3083B15EED73">
+    <bpmn2:intermediateCatchEvent id="_932D0141-2BB7-41F4-B047-3083B15EED73" name="StockConfirmed">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[StockConfirmed]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_4746AE21-5400-4C23-81BD-0011C60FD8F0</bpmn2:incoming>
       <bpmn2:outgoing>_2731B8E4-96F7-4A78-AD17-E7DA549CA98D</bpmn2:outgoing>
       <bpmn2:dataOutput id="_932D0141-2BB7-41F4-B047-3083B15EED73_eventOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__932D0141-2BB7-41F4-B047-3083B15EED73_eventOutputXItem" name="event"/>
@@ -247,9 +292,14 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_932D0141-2BB7-41F4-B047-3083B15EED73_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="StockConfirmed" messageRef="_FfrKoSRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="StockConfirmed" messageRef="_wVB1ySUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
-    <bpmn2:intermediateCatchEvent id="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54">
+    <bpmn2:intermediateCatchEvent id="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54" name="StockRejected">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[StockRejected]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:incoming>_9B801B64-94E1-4EC7-8CE1-5BE53EF40356</bpmn2:incoming>
       <bpmn2:outgoing>_BC587BEF-BBDE-4215-AA0E-B731927E734D</bpmn2:outgoing>
       <bpmn2:dataOutput id="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54_eventOutputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__45B132B5-FBEF-45AF-BDD2-916BDAD73E54_eventOutputXItem" name="event"/>
@@ -260,12 +310,12 @@
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_45B132B5-FBEF-45AF-BDD2-916BDAD73E54_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="StockRejected" messageRef="_FfrKoCRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="StockRejected" messageRef="_wVB1yCUEEDmijMpQaf44fA"/>
     </bpmn2:intermediateCatchEvent>
     <bpmn2:eventBasedGateway id="_F2A24235-DAD2-4154-8964-A280A03759C1" gatewayDirection="Diverging">
       <bpmn2:incoming>_E97AE0BD-D672-4485-876B-55F7F76BB295</bpmn2:incoming>
-      <bpmn2:outgoing>_4746AE21-5400-4C23-81BD-0011C60FD8F0</bpmn2:outgoing>
       <bpmn2:outgoing>_9B801B64-94E1-4EC7-8CE1-5BE53EF40356</bpmn2:outgoing>
+      <bpmn2:outgoing>_4746AE21-5400-4C23-81BD-0011C60FD8F0</bpmn2:outgoing>
     </bpmn2:eventBasedGateway>
     <bpmn2:scriptTask id="_D5C3426F-7C22-4745-9417-A962BD878BE4" name="Assign data from event" scriptFormat="http://www.java.com/java">
       <bpmn2:extensionElements>
@@ -290,7 +340,12 @@ shipment.setClientId(event.getClientId());
 shipment.setName(event.getAddress());
 kcontext.setVariable("shipment", shipment);</bpmn2:script>
     </bpmn2:scriptTask>
-    <bpmn2:startEvent id="_7A95123D-7AD5-4D9D-8B59-379DB384CC38">
+    <bpmn2:startEvent id="_7A95123D-7AD5-4D9D-8B59-379DB384CC38" name="OrderRequest Event">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[OrderRequest Event]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:outgoing>_31242BC8-7DFD-4F6F-B075-12282C736966</bpmn2:outgoing>
       <bpmn2:dataOutput id="_7A95123D-7AD5-4D9D-8B59-379DB384CC38_eventOutputX" drools:dtype="org.acme.sagas.model.OrderEvent" itemSubjectRef="__7A95123D-7AD5-4D9D-8B59-379DB384CC38_eventOutputXItem" name="event"/>
       <bpmn2:dataOutputAssociation>
@@ -300,7 +355,7 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
       <bpmn2:outputSet>
         <bpmn2:dataOutputRefs>_7A95123D-7AD5-4D9D-8B59-379DB384CC38_eventOutputX</bpmn2:dataOutputRefs>
       </bpmn2:outputSet>
-      <bpmn2:messageEventDefinition drools:msgref="RequestOrder" messageRef="_FfqjlyRtEDmsw8UZgDdwSA"/>
+      <bpmn2:messageEventDefinition drools:msgref="RequestOrder" messageRef="_wVB1xyUEEDmijMpQaf44fA"/>
     </bpmn2:startEvent>
     <bpmn2:subProcess id="_BB7BD7E5-78B3-4945-826E-AF9E98413484" name="Order Failed" isForCompensation="true">
       <bpmn2:extensionElements>
@@ -318,10 +373,10 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_B1C165F8-EC59-4953-950A-F6DA8051C46E" name="Order Failed Event">
+      <bpmn2:endEvent id="_B1C165F8-EC59-4953-950A-F6DA8051C46E" name="OrderFailed Event">
         <bpmn2:extensionElements>
           <drools:metaData name="elementname">
-            <drools:metaValue><![CDATA[Order Failed Event]]></drools:metaValue>
+            <drools:metaValue><![CDATA[OrderFailed Event]]></drools:metaValue>
           </drools:metaData>
         </bpmn2:extensionElements>
         <bpmn2:incoming>_116D889E-FB88-4874-990F-D5EA831F1BE8</bpmn2:incoming>
@@ -333,9 +388,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_B1C165F8-EC59-4953-950A-F6DA8051C46E_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="OrderRejected" messageRef="_FfqjliRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="OrderRejected" messageRef="_wVB1xiUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_91CF365B-7CDF-4D72-8DD5-0931DD40669E">
+      <bpmn2:startEvent id="_91CF365B-7CDF-4D72-8DD5-0931DD40669E" name="OrderFailed Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[OrderFailed Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_116D889E-FB88-4874-990F-D5EA831F1BE8</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -352,7 +412,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_15294A91-5064-435C-87D9-BD07DABE8099">
+      <bpmn2:endEvent id="_15294A91-5064-435C-87D9-BD07DABE8099" name="CancelShipment Event">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelShipment Event]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_6C5584D2-64BE-4E9A-ABD5-A383C297EEC6</bpmn2:incoming>
         <bpmn2:dataInput id="_15294A91-5064-435C-87D9-BD07DABE8099_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__15294A91-5064-435C-87D9-BD07DABE8099_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -362,9 +427,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_15294A91-5064-435C-87D9-BD07DABE8099_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="CancelShipment" messageRef="_FfqjlSRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="CancelShipment" messageRef="_wVB1xSUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_3591C8C4-7E46-470A-AEAC-0A8A3571F5AB">
+      <bpmn2:startEvent id="_3591C8C4-7E46-470A-AEAC-0A8A3571F5AB" name="CancelShipment Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelShipment Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_6C5584D2-64BE-4E9A-ABD5-A383C297EEC6</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -384,7 +454,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_088A442B-28FF-467E-98BE-76CDD877C1E5">
+      <bpmn2:endEvent id="_088A442B-28FF-467E-98BE-76CDD877C1E5" name="CancelPayment Event">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelPayment Event]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_55973F42-02DF-483B-853F-3617F32A4516</bpmn2:incoming>
         <bpmn2:dataInput id="_088A442B-28FF-467E-98BE-76CDD877C1E5_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__088A442B-28FF-467E-98BE-76CDD877C1E5_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -394,9 +469,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_088A442B-28FF-467E-98BE-76CDD877C1E5_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="CancelPayment" messageRef="_FfqjlCRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="CancelPayment" messageRef="_wVB1xCUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_1BB5FA35-1995-4F37-9B89-5D9AB314CAC9">
+      <bpmn2:startEvent id="_1BB5FA35-1995-4F37-9B89-5D9AB314CAC9" name="CancelPayment Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelPayment Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_55973F42-02DF-483B-853F-3617F32A4516</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -416,7 +496,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_AFC6CBE6-60CA-4D5E-95F4-65012D464E3E">
+      <bpmn2:endEvent id="_AFC6CBE6-60CA-4D5E-95F4-65012D464E3E" name="CancelStockEvent">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelStockEvent]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_BA66926B-5CA7-4586-82BB-A6CCD94A52CA</bpmn2:incoming>
         <bpmn2:dataInput id="_AFC6CBE6-60CA-4D5E-95F4-65012D464E3E_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__AFC6CBE6-60CA-4D5E-95F4-65012D464E3E_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -426,9 +511,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_AFC6CBE6-60CA-4D5E-95F4-65012D464E3E_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="CancelStock" messageRef="_FfqjkyRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="CancelStock" messageRef="_wVB1wyUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_00010816-7E08-41CE-A51A-6F587FF859B4">
+      <bpmn2:startEvent id="_00010816-7E08-41CE-A51A-6F587FF859B4" name="CancelStock Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[CancelStock Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_BA66926B-5CA7-4586-82BB-A6CCD94A52CA</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -450,7 +540,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_80F2F451-FBD6-4104-8A1E-F233DEE1B6BF">
+      <bpmn2:endEvent id="_80F2F451-FBD6-4104-8A1E-F233DEE1B6BF" name="RequestShipment Event">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[RequestShipment Event]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_587BFE5D-2AE5-4778-92A3-F1B52D6EB14E</bpmn2:incoming>
         <bpmn2:dataInput id="_80F2F451-FBD6-4104-8A1E-F233DEE1B6BF_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__80F2F451-FBD6-4104-8A1E-F233DEE1B6BF_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -460,9 +555,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_80F2F451-FBD6-4104-8A1E-F233DEE1B6BF_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="RequestShipment" messageRef="_FfqjkiRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="RequestShipment" messageRef="_wVB1wiUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_7CD1EAF0-F0B3-416A-A250-C329396ADD67">
+      <bpmn2:startEvent id="_7CD1EAF0-F0B3-416A-A250-C329396ADD67" name="ProcessShipment Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[ProcessShipment Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_587BFE5D-2AE5-4778-92A3-F1B52D6EB14E</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -484,7 +584,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_684F1193-247B-46F1-AF24-CE3EA66B11B9">
+      <bpmn2:endEvent id="_684F1193-247B-46F1-AF24-CE3EA66B11B9" name="RequestPayment Event">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[RequestPayment Event]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_4626FFCE-1E1E-4484-AE63-13E5E6FF8E12</bpmn2:incoming>
         <bpmn2:dataInput id="_684F1193-247B-46F1-AF24-CE3EA66B11B9_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__684F1193-247B-46F1-AF24-CE3EA66B11B9_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -494,9 +599,14 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_684F1193-247B-46F1-AF24-CE3EA66B11B9_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="RequestPayment" messageRef="_FfqjkSRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="RequestPayment" messageRef="_wVB1wSUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_DEDC3FF9-9081-4D0B-9FE7-2A2F6CE8FDF9">
+      <bpmn2:startEvent id="_DEDC3FF9-9081-4D0B-9FE7-2A2F6CE8FDF9" name="ProcessPayment Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[ProcessPayment Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_4626FFCE-1E1E-4484-AE63-13E5E6FF8E12</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
@@ -518,7 +628,12 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
           </drools:metaData>
         </bpmn2:extensionElements>
       </bpmn2:sequenceFlow>
-      <bpmn2:endEvent id="_510EBC4E-0C31-400B-A5DB-78F44265E7D3">
+      <bpmn2:endEvent id="_510EBC4E-0C31-400B-A5DB-78F44265E7D3" name="RequestStock Event">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[RequestStock Event]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:incoming>_35B07A2E-CBBB-48BB-95B9-922797B6FE42</bpmn2:incoming>
         <bpmn2:dataInput id="_510EBC4E-0C31-400B-A5DB-78F44265E7D3_eventInputX" drools:dtype="org.acme.sagas.model.Reservation" itemSubjectRef="__510EBC4E-0C31-400B-A5DB-78F44265E7D3_eventInputXItem" name="event"/>
         <bpmn2:dataInputAssociation>
@@ -528,28 +643,58 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_510EBC4E-0C31-400B-A5DB-78F44265E7D3_eventInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:messageEventDefinition drools:msgref="RequestStock" messageRef="_FfqjkCRtEDmsw8UZgDdwSA"/>
+        <bpmn2:messageEventDefinition drools:msgref="RequestStock" messageRef="_wVB1wCUEEDmijMpQaf44fA"/>
       </bpmn2:endEvent>
-      <bpmn2:startEvent id="_BEF3D695-A48C-4893-A338-E50B06441482">
+      <bpmn2:startEvent id="_BEF3D695-A48C-4893-A338-E50B06441482" name="ReserveStock Start">
+        <bpmn2:extensionElements>
+          <drools:metaData name="elementname">
+            <drools:metaValue><![CDATA[ReserveStock Start]]></drools:metaValue>
+          </drools:metaData>
+        </bpmn2:extensionElements>
         <bpmn2:outgoing>_35B07A2E-CBBB-48BB-95B9-922797B6FE42</bpmn2:outgoing>
       </bpmn2:startEvent>
     </bpmn2:subProcess>
-    <bpmn2:boundaryEvent id="_7390FF61-1BC1-45E5-94E9-5B737AA5A4C9" drools:boundaryca="true" drools:dockerinfo="303.00000000000006^-28.000000000000014|" attachedToRef="_A0DA1E87-7E15-4EFB-876F-616B5C1BB192">
+    <bpmn2:boundaryEvent id="_7390FF61-1BC1-45E5-94E9-5B737AA5A4C9" drools:boundaryca="true" drools:dockerinfo="222.63701923076928^-28.000000000000007|" name="StockTimeout" attachedToRef="_A0DA1E87-7E15-4EFB-876F-616B5C1BB192">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[StockTimeout]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:outgoing>_BAF32AF5-CC29-45F0-94EF-223245688CB5</bpmn2:outgoing>
       <bpmn2:timerEventDefinition>
         <bpmn2:timeDuration xsi:type="bpmn2:tFormalExpression">PT1H</bpmn2:timeDuration>
       </bpmn2:timerEventDefinition>
     </bpmn2:boundaryEvent>
-    <bpmn2:boundaryEvent id="_F990E88E-5A2C-427C-9642-89E04EF73E5F" drools:dockerinfo="46.111111111111086^-28.000000000000014|" attachedToRef="_A0DA1E87-7E15-4EFB-876F-616B5C1BB192">
+    <bpmn2:boundaryEvent id="_F990E88E-5A2C-427C-9642-89E04EF73E5F" drools:dockerinfo="28.033653846153868^-28|" name="Stock Compensation" attachedToRef="_A0DA1E87-7E15-4EFB-876F-616B5C1BB192">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Stock Compensation]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:boundaryEvent>
-    <bpmn2:boundaryEvent id="_B8BBC26E-22B0-4C94-8D06-C14A831D514F" drools:dockerinfo="-28^37|" attachedToRef="_B41211AB-B318-4BD7-8721-56A2B34C1355">
+    <bpmn2:boundaryEvent id="_B8BBC26E-22B0-4C94-8D06-C14A831D514F" drools:dockerinfo="-28^30.89671361502348|" name="Payment Compensation" attachedToRef="_B41211AB-B318-4BD7-8721-56A2B34C1355">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Payment Compensation]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:boundaryEvent>
-    <bpmn2:boundaryEvent id="_7868B6FB-9A2D-482D-8759-0BB1464D6D50" drools:dockerinfo="-28^27.000000000000014|" attachedToRef="_E299D496-C7AA-444A-AA29-5EFC9A62500C">
+    <bpmn2:boundaryEvent id="_7868B6FB-9A2D-482D-8759-0BB1464D6D50" drools:dockerinfo="-28^19.38839285714287|" name="Shipment Compensation" attachedToRef="_E299D496-C7AA-444A-AA29-5EFC9A62500C">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Shipment Compensation]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:boundaryEvent>
-    <bpmn2:boundaryEvent id="_E2B481F6-47E9-467E-97CB-E352DECE9435" drools:dockerinfo="45.74468085106383^-28|" attachedToRef="_D5C3426F-7C22-4745-9417-A962BD878BE4">
+    <bpmn2:boundaryEvent id="_E2B481F6-47E9-467E-97CB-E352DECE9435" drools:dockerinfo="64.9090909090909^-27.999999999999986|" name="Compensate Order Event" attachedToRef="_D5C3426F-7C22-4745-9417-A962BD878BE4">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Compensate Order Event]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
       <bpmn2:compensateEventDefinition/>
     </bpmn2:boundaryEvent>
     <bpmn2:association id="_8FBC791F-D924-452C-90AA-07E123EB1E0D" associationDirection="One" sourceRef="_F990E88E-5A2C-427C-9642-89E04EF73E5F" targetRef="_2FAA9403-D70E-4ED0-8145-08CB411068E8"/>
@@ -560,43 +705,43 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
   <bpmndi:BPMNDiagram>
     <bpmndi:BPMNPlane bpmnElement="orders">
       <bpmndi:BPMNShape id="shape__A0DA1E87-7E15-4EFB-876F-616B5C1BB192" bpmnElement="_A0DA1E87-7E15-4EFB-876F-616B5C1BB192" isExpanded="true">
-        <dc:Bounds height="241" width="416" x="450" y="400.5"/>
+        <dc:Bounds height="131" width="315" x="450" y="400.5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__BEF3D695-A48C-4893-A338-E50B06441482" bpmnElement="_BEF3D695-A48C-4893-A338-E50B06441482">
-        <dc:Bounds height="56" width="56" x="542" y="504"/>
+        <dc:Bounds height="56" width="56" x="515" y="451"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__510EBC4E-0C31-400B-A5DB-78F44265E7D3" bpmnElement="_510EBC4E-0C31-400B-A5DB-78F44265E7D3">
-        <dc:Bounds height="56" width="56" x="727" y="504"/>
+        <dc:Bounds height="56" width="56" x="660" y="451"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__BEF3D695-A48C-4893-A338-E50B06441482_to_shape__510EBC4E-0C31-400B-A5DB-78F44265E7D3" bpmnElement="_35B07A2E-CBBB-48BB-95B9-922797B6FE42">
-        <di:waypoint x="598" y="532"/>
-        <di:waypoint x="727" y="532"/>
+        <di:waypoint x="571" y="479"/>
+        <di:waypoint x="660" y="479"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__B41211AB-B318-4BD7-8721-56A2B34C1355" bpmnElement="_B41211AB-B318-4BD7-8721-56A2B34C1355" isExpanded="true">
-        <dc:Bounds height="213" width="413" x="449" y="753"/>
+        <dc:Bounds height="193" width="380" x="449" y="753"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__DEDC3FF9-9081-4D0B-9FE7-2A2F6CE8FDF9" bpmnElement="_DEDC3FF9-9081-4D0B-9FE7-2A2F6CE8FDF9">
-        <dc:Bounds height="56" width="56" x="542" y="838"/>
+        <dc:Bounds height="56" width="56" x="546" y="823"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__684F1193-247B-46F1-AF24-CE3EA66B11B9" bpmnElement="_684F1193-247B-46F1-AF24-CE3EA66B11B9">
-        <dc:Bounds height="56" width="56" x="727" y="838"/>
+        <dc:Bounds height="56" width="56" x="718" y="823"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__DEDC3FF9-9081-4D0B-9FE7-2A2F6CE8FDF9_to_shape__684F1193-247B-46F1-AF24-CE3EA66B11B9" bpmnElement="_4626FFCE-1E1E-4484-AE63-13E5E6FF8E12">
-        <di:waypoint x="598" y="866"/>
-        <di:waypoint x="727" y="866"/>
+        <di:waypoint x="602" y="851"/>
+        <di:waypoint x="718" y="851"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__E299D496-C7AA-444A-AA29-5EFC9A62500C" bpmnElement="_E299D496-C7AA-444A-AA29-5EFC9A62500C" isExpanded="true">
-        <dc:Bounds height="224" width="414" x="449" y="1033"/>
+        <dc:Bounds height="193" width="414" x="445" y="1021"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__7CD1EAF0-F0B3-416A-A250-C329396ADD67" bpmnElement="_7CD1EAF0-F0B3-416A-A250-C329396ADD67">
-        <dc:Bounds height="56" width="56" x="542" y="1129"/>
+        <dc:Bounds height="56" width="56" x="538" y="1117"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__80F2F451-FBD6-4104-8A1E-F233DEE1B6BF" bpmnElement="_80F2F451-FBD6-4104-8A1E-F233DEE1B6BF">
-        <dc:Bounds height="56" width="56" x="727" y="1129"/>
+        <dc:Bounds height="56" width="56" x="718" y="1117"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__7CD1EAF0-F0B3-416A-A250-C329396ADD67_to_shape__80F2F451-FBD6-4104-8A1E-F233DEE1B6BF" bpmnElement="_587BFE5D-2AE5-4778-92A3-F1B52D6EB14E">
-        <di:waypoint x="598" y="1157"/>
-        <di:waypoint x="727" y="1157"/>
+        <di:waypoint x="594" y="1145"/>
+        <di:waypoint x="718" y="1145"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__2FAA9403-D70E-4ED0-8145-08CB411068E8" bpmnElement="_2FAA9403-D70E-4ED0-8145-08CB411068E8" isExpanded="true">
         <dc:Bounds height="142" width="287" x="476.5" y="147"/>
@@ -612,30 +757,30 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <di:waypoint x="659.5" y="230"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__67028EF9-2663-45B6-8535-01AB205EE36D" bpmnElement="_67028EF9-2663-45B6-8535-01AB205EE36D" isExpanded="true">
-        <dc:Bounds height="136" width="280" x="86" y="753"/>
+        <dc:Bounds height="136" width="280" x="78" y="744"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__1BB5FA35-1995-4F37-9B89-5D9AB314CAC9" bpmnElement="_1BB5FA35-1995-4F37-9B89-5D9AB314CAC9">
-        <dc:Bounds height="56" width="56" x="123" y="793"/>
+        <dc:Bounds height="56" width="56" x="131" y="769"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__088A442B-28FF-467E-98BE-76CDD877C1E5" bpmnElement="_088A442B-28FF-467E-98BE-76CDD877C1E5">
-        <dc:Bounds height="56" width="56" x="259" y="793"/>
+        <dc:Bounds height="56" width="56" x="248" y="784"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__1BB5FA35-1995-4F37-9B89-5D9AB314CAC9_to_shape__088A442B-28FF-467E-98BE-76CDD877C1E5" bpmnElement="_55973F42-02DF-483B-853F-3617F32A4516">
-        <di:waypoint x="179" y="821"/>
-        <di:waypoint x="259" y="821"/>
+        <di:waypoint x="187" y="797"/>
+        <di:waypoint x="248" y="812"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__C30B5EC6-CC5A-4E79-A57E-3FFFC93364D9" bpmnElement="_C30B5EC6-CC5A-4E79-A57E-3FFFC93364D9" isExpanded="true">
-        <dc:Bounds height="154" width="281" x="92" y="1010.5"/>
+        <dc:Bounds height="154" width="281" x="85" y="990.5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__3591C8C4-7E46-470A-AEAC-0A8A3571F5AB" bpmnElement="_3591C8C4-7E46-470A-AEAC-0A8A3571F5AB">
-        <dc:Bounds height="56" width="56" x="128" y="1063"/>
+        <dc:Bounds height="56" width="56" x="131" y="1021"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__15294A91-5064-435C-87D9-BD07DABE8099" bpmnElement="_15294A91-5064-435C-87D9-BD07DABE8099">
-        <dc:Bounds height="56" width="56" x="256" y="1063"/>
+        <dc:Bounds height="56" width="56" x="249" y="1043"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__3591C8C4-7E46-470A-AEAC-0A8A3571F5AB_to_shape__15294A91-5064-435C-87D9-BD07DABE8099" bpmnElement="_6C5584D2-64BE-4E9A-ABD5-A383C297EEC6">
-        <di:waypoint x="156" y="1091"/>
-        <di:waypoint x="256" y="1091"/>
+        <di:waypoint x="159" y="1049"/>
+        <di:waypoint x="249" y="1071"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__BB7BD7E5-78B3-4945-826E-AF9E98413484" bpmnElement="_BB7BD7E5-78B3-4945-826E-AF9E98413484" isExpanded="true">
         <dc:Bounds height="161" width="342" x="78" y="137"/>
@@ -651,34 +796,40 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <di:waypoint x="287.5" y="224.5"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="shape__7390FF61-1BC1-45E5-94E9-5B737AA5A4C9" bpmnElement="_7390FF61-1BC1-45E5-94E9-5B737AA5A4C9">
-        <dc:Bounds height="56" width="56" x="753" y="372.5"/>
+        <dc:Bounds height="56" width="56" x="672.6370192307693" y="372.5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F990E88E-5A2C-427C-9642-89E04EF73E5F" bpmnElement="_F990E88E-5A2C-427C-9642-89E04EF73E5F">
-        <dc:Bounds height="56" width="56" x="496.1111111111111" y="372.5"/>
+        <dc:Bounds height="56" width="55.99999999999994" x="478.03365384615387" y="372.5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__B8BBC26E-22B0-4C94-8D06-C14A831D514F" bpmnElement="_B8BBC26E-22B0-4C94-8D06-C14A831D514F">
-        <dc:Bounds height="56" width="56" x="421" y="790"/>
+        <dc:Bounds height="56" width="56" x="421" y="783.8967136150235"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__7868B6FB-9A2D-482D-8759-0BB1464D6D50" bpmnElement="_7868B6FB-9A2D-482D-8759-0BB1464D6D50">
+        <dc:Bounds height="56" width="56" x="417" y="1040.388392857143"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__E2B481F6-47E9-467E-97CB-E352DECE9435" bpmnElement="_E2B481F6-47E9-467E-97CB-E352DECE9435">
+        <dc:Bounds height="56" width="56" x="268.9090909090909" y="348"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__7A95123D-7AD5-4D9D-8B59-379DB384CC38" bpmnElement="_7A95123D-7AD5-4D9D-8B59-379DB384CC38">
-        <dc:Bounds height="56" width="56" x="112" y="493"/>
+        <dc:Bounds height="56" width="56" x="52" y="438"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D5C3426F-7C22-4745-9417-A962BD878BE4" bpmnElement="_D5C3426F-7C22-4745-9417-A962BD878BE4">
-        <dc:Bounds height="102" width="154" x="232" y="470"/>
+        <dc:Bounds height="179" width="196" x="204" y="376"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F2A24235-DAD2-4154-8964-A280A03759C1" bpmnElement="_F2A24235-DAD2-4154-8964-A280A03759C1">
-        <dc:Bounds height="56" width="56" x="936" y="492.5"/>
+        <dc:Bounds height="56" width="56" x="861" y="437.5"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__45B132B5-FBEF-45AF-BDD2-916BDAD73E54" bpmnElement="_45B132B5-FBEF-45AF-BDD2-916BDAD73E54">
-        <dc:Bounds height="56" width="56" x="1072" y="450.5"/>
+        <dc:Bounds height="56" width="56" x="1079" y="411"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__932D0141-2BB7-41F4-B047-3083B15EED73" bpmnElement="_932D0141-2BB7-41F4-B047-3083B15EED73">
-        <dc:Bounds height="56" width="56" x="1072" y="546.5"/>
+        <dc:Bounds height="56" width="56" x="1079" y="547"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__CC811C3D-5280-420C-97B9-C20FC342DD30" bpmnElement="_CC811C3D-5280-420C-97B9-C20FC342DD30">
-        <dc:Bounds height="56" width="56" x="1198" y="450.5"/>
+        <dc:Bounds height="56" width="56" x="1244" y="411"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__E51F1034-4159-49E1-A69B-C87A153460F5" bpmnElement="_E51F1034-4159-49E1-A69B-C87A153460F5">
-        <dc:Bounds height="56" width="56" x="753" y="275"/>
+        <dc:Bounds height="56" width="56" x="796" y="329"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" bpmnElement="_CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D">
         <dc:Bounds height="56" width="56" x="936" y="832"/>
@@ -690,116 +841,110 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         <dc:Bounds height="56" width="56" x="1072" y="928"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__4D8A69D8-204F-4B2E-8A37-B47229889B8D" bpmnElement="_4D8A69D8-204F-4B2E-8A37-B47229889B8D">
-        <dc:Bounds height="56" width="56" x="942.5" y="1117"/>
+        <dc:Bounds height="56" width="56" x="926" y="1102"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__A6CAB402-8F2C-433A-B296-8989E7D9D0DE" bpmnElement="_A6CAB402-8F2C-433A-B296-8989E7D9D0DE">
-        <dc:Bounds height="56" width="56" x="1078.5" y="1117"/>
+        <dc:Bounds height="56" width="56" x="1076" y="1102"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__86BF36C6-18AA-48F4-B8D5-CD3BA0668820" bpmnElement="_86BF36C6-18AA-48F4-B8D5-CD3BA0668820">
         <dc:Bounds height="56" width="56" x="1078.5" y="1213"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D7FACA27-B011-412A-AD35-2991559A4D49" bpmnElement="_D7FACA27-B011-412A-AD35-2991559A4D49">
-        <dc:Bounds height="56" width="56" x="1214.5" y="1213"/>
+        <dc:Bounds height="56" width="56" x="1244" y="1213"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D3461D94-AF5A-4274-B225-A44DE0B9FCCB" bpmnElement="_D3461D94-AF5A-4274-B225-A44DE0B9FCCB">
-        <dc:Bounds height="56" width="56" x="1214.5" y="1117"/>
+        <dc:Bounds height="56" width="56" x="1244" y="1102"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__9C79ADBD-6255-4A74-BA5C-2120A68C2E85" bpmnElement="_9C79ADBD-6255-4A74-BA5C-2120A68C2E85">
-        <dc:Bounds height="56" width="56" x="1208" y="831.5"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__7868B6FB-9A2D-482D-8759-0BB1464D6D50" bpmnElement="_7868B6FB-9A2D-482D-8759-0BB1464D6D50">
-        <dc:Bounds height="56" width="56" x="421" y="1060"/>
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="shape__E2B481F6-47E9-467E-97CB-E352DECE9435" bpmnElement="_E2B481F6-47E9-467E-97CB-E352DECE9435">
-        <dc:Bounds height="56" width="56" x="277.74468085106383" y="442"/>
+        <dc:Bounds height="56" width="56" x="1244" y="832"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__7390FF61-1BC1-45E5-94E9-5B737AA5A4C9_to_shape__E51F1034-4159-49E1-A69B-C87A153460F5" bpmnElement="_BAF32AF5-CC29-45F0-94EF-223245688CB5">
-        <di:waypoint x="781" y="428.5"/>
-        <di:waypoint x="781" y="275"/>
+        <di:waypoint x="700.6370192307693" y="428.5"/>
+        <di:waypoint x="824" y="329"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__F990E88E-5A2C-427C-9642-89E04EF73E5F_to_shape__2FAA9403-D70E-4ED0-8145-08CB411068E8" bpmnElement="_8FBC791F-D924-452C-90AA-07E123EB1E0D">
-        <di:waypoint x="552.1111111111111" y="400.5"/>
+        <di:waypoint x="534.0336538461538" y="400.5"/>
         <di:waypoint x="476.5" y="218"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__B8BBC26E-22B0-4C94-8D06-C14A831D514F_to_shape__67028EF9-2663-45B6-8535-01AB205EE36D" bpmnElement="_3B0F62DC-F75E-4545-84C4-9DE582FA2FBB">
-        <di:waypoint x="449" y="846"/>
-        <di:waypoint x="226" y="753"/>
+        <di:waypoint x="449" y="839.8967136150235"/>
+        <di:waypoint x="218" y="744"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__7868B6FB-9A2D-482D-8759-0BB1464D6D50_to_shape__C30B5EC6-CC5A-4E79-A57E-3FFFC93364D9" bpmnElement="_E98C19DB-019A-4DE0-9C76-51CC0083F1BD">
+        <di:waypoint x="445" y="1096.388392857143"/>
+        <di:waypoint x="225.5" y="990.5"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__E2B481F6-47E9-467E-97CB-E352DECE9435_to_shape__BB7BD7E5-78B3-4945-826E-AF9E98413484" bpmnElement="_5D793276-9882-4106-963A-B7CA2D4C4579">
+        <di:waypoint x="296.9090909090909" y="404"/>
+        <di:waypoint x="249" y="137"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__D5C3426F-7C22-4745-9417-A962BD878BE4_to_shape__A0DA1E87-7E15-4EFB-876F-616B5C1BB192" bpmnElement="_442A6DAD-514A-4416-98E0-C19D8BA5D67B">
-        <di:waypoint x="309" y="521"/>
-        <di:waypoint x="450" y="521"/>
+        <di:waypoint x="302" y="465.5"/>
+        <di:waypoint x="450" y="466"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__A0DA1E87-7E15-4EFB-876F-616B5C1BB192_to_shape__F2A24235-DAD2-4154-8964-A280A03759C1" bpmnElement="_E97AE0BD-D672-4485-876B-55F7F76BB295">
-        <di:waypoint x="866" y="521"/>
-        <di:waypoint x="936" y="520.5"/>
+        <di:waypoint x="765" y="466"/>
+        <di:waypoint x="861" y="465.5"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__932D0141-2BB7-41F4-B047-3083B15EED73_to_shape__B41211AB-B318-4BD7-8721-56A2B34C1355" bpmnElement="_2731B8E4-96F7-4A78-AD17-E7DA549CA98D">
-        <di:waypoint x="1128" y="574.5"/>
-        <di:waypoint x="449" y="859.5"/>
+        <di:waypoint x="1135" y="575"/>
+        <di:waypoint x="449" y="849.5"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__B41211AB-B318-4BD7-8721-56A2B34C1355_to_shape__CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D" bpmnElement="_80F0568C-7FB6-4279-96C8-178E0ED8969A">
-        <di:waypoint x="862" y="859.5"/>
+        <di:waypoint x="829" y="849.5"/>
         <di:waypoint x="936" y="860"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__9B9721C4-384B-4011-93A1-466531C2C2AF_to_shape__E299D496-C7AA-444A-AA29-5EFC9A62500C" bpmnElement="_8E017A23-ABF2-4E11-97CD-BF7606F543A2">
         <di:waypoint x="1128" y="956"/>
-        <di:waypoint x="449" y="1145"/>
+        <di:waypoint x="445" y="1117.5"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__E299D496-C7AA-444A-AA29-5EFC9A62500C_to_shape__4D8A69D8-204F-4B2E-8A37-B47229889B8D" bpmnElement="_403749BE-6A2F-4941-B4E0-80AD5835A2D1">
-        <di:waypoint x="863" y="1145"/>
-        <di:waypoint x="942.5" y="1145"/>
+        <di:waypoint x="859" y="1117.5"/>
+        <di:waypoint x="926" y="1130"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__7A95123D-7AD5-4D9D-8B59-379DB384CC38_to_shape__D5C3426F-7C22-4745-9417-A962BD878BE4" bpmnElement="_31242BC8-7DFD-4F6F-B075-12282C736966">
-        <di:waypoint x="140" y="521"/>
-        <di:waypoint x="232" y="521"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__F2A24235-DAD2-4154-8964-A280A03759C1_to_shape__932D0141-2BB7-41F4-B047-3083B15EED73" bpmnElement="_4746AE21-5400-4C23-81BD-0011C60FD8F0">
-        <di:waypoint x="992" y="520.5"/>
-        <di:waypoint x="1072" y="574.5"/>
+        <di:waypoint x="80" y="466"/>
+        <di:waypoint x="204" y="465.5"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__F2A24235-DAD2-4154-8964-A280A03759C1_to_shape__45B132B5-FBEF-45AF-BDD2-916BDAD73E54" bpmnElement="_9B801B64-94E1-4EC7-8CE1-5BE53EF40356">
-        <di:waypoint x="992" y="520.5"/>
-        <di:waypoint x="1072" y="478.5"/>
+        <di:waypoint x="917" y="465.5"/>
+        <di:waypoint x="1079" y="439"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__F2A24235-DAD2-4154-8964-A280A03759C1_to_shape__932D0141-2BB7-41F4-B047-3083B15EED73" bpmnElement="_4746AE21-5400-4C23-81BD-0011C60FD8F0">
+        <di:waypoint x="917" y="465.5"/>
+        <di:waypoint x="1079" y="575"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__45B132B5-FBEF-45AF-BDD2-916BDAD73E54_to_shape__CC811C3D-5280-420C-97B9-C20FC342DD30" bpmnElement="_BC587BEF-BBDE-4215-AA0E-B731927E734D">
-        <di:waypoint x="1128" y="478.5"/>
-        <di:waypoint x="1198" y="478.5"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D_to_shape__1D2F2B30-9561-466E-9756-B864C5457ADF" bpmnElement="_B13E4DF4-23B1-403C-A539-76A581386AFE">
-        <di:waypoint x="992" y="860"/>
-        <di:waypoint x="1072" y="859.5"/>
+        <di:waypoint x="1135" y="439"/>
+        <di:waypoint x="1244" y="439"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D_to_shape__9B9721C4-384B-4011-93A1-466531C2C2AF" bpmnElement="_AB1BDAB4-468E-4824-BDD9-4BE42EE61D1A">
         <di:waypoint x="964" y="888"/>
         <di:waypoint x="1100" y="928"/>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__CF8CAB86-AB13-4ED0-BDDD-8A1428E8BE8D_to_shape__1D2F2B30-9561-466E-9756-B864C5457ADF" bpmnElement="_B13E4DF4-23B1-403C-A539-76A581386AFE">
+        <di:waypoint x="992" y="860"/>
+        <di:waypoint x="1072" y="859.5"/>
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__1D2F2B30-9561-466E-9756-B864C5457ADF_to_shape__9C79ADBD-6255-4A74-BA5C-2120A68C2E85" bpmnElement="_E70FCB69-733E-4782-B1B2-2EB76A2904B1">
         <di:waypoint x="1128" y="859.5"/>
-        <di:waypoint x="1208" y="859.5"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__4D8A69D8-204F-4B2E-8A37-B47229889B8D_to_shape__A6CAB402-8F2C-433A-B296-8989E7D9D0DE" bpmnElement="_71C19E44-E156-4D03-A0EC-A5EC244B5363">
-        <di:waypoint x="998.5" y="1145"/>
-        <di:waypoint x="1078.5" y="1145"/>
+        <di:waypoint x="1244" y="860"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__4D8A69D8-204F-4B2E-8A37-B47229889B8D_to_shape__86BF36C6-18AA-48F4-B8D5-CD3BA0668820" bpmnElement="_5C897BF8-0D53-46B0-A2C4-317F176F14F5">
-        <di:waypoint x="970.5" y="1173"/>
+        <di:waypoint x="954" y="1158"/>
         <di:waypoint x="1106.5" y="1213"/>
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__4D8A69D8-204F-4B2E-8A37-B47229889B8D_to_shape__A6CAB402-8F2C-433A-B296-8989E7D9D0DE" bpmnElement="_71C19E44-E156-4D03-A0EC-A5EC244B5363">
+        <di:waypoint x="982" y="1130"/>
+        <di:waypoint x="1076" y="1130"/>
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__A6CAB402-8F2C-433A-B296-8989E7D9D0DE_to_shape__D3461D94-AF5A-4274-B225-A44DE0B9FCCB" bpmnElement="_A2C7B225-FC7B-41A7-A6C7-1613F6A4E13A">
-        <di:waypoint x="1134.5" y="1145"/>
-        <di:waypoint x="1214.5" y="1145"/>
+        <di:waypoint x="1132" y="1130"/>
+        <di:waypoint x="1244" y="1130"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__86BF36C6-18AA-48F4-B8D5-CD3BA0668820_to_shape__D7FACA27-B011-412A-AD35-2991559A4D49" bpmnElement="_5953D8F9-39B1-4788-AC4A-930AF2EE1F6E">
         <di:waypoint x="1134.5" y="1241"/>
-        <di:waypoint x="1214.5" y="1241"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__7868B6FB-9A2D-482D-8759-0BB1464D6D50_to_shape__C30B5EC6-CC5A-4E79-A57E-3FFFC93364D9" bpmnElement="_E98C19DB-019A-4DE0-9C76-51CC0083F1BD">
-        <di:waypoint x="449" y="1116"/>
-        <di:waypoint x="232.5" y="1010.5"/>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="edge_shape__E2B481F6-47E9-467E-97CB-E352DECE9435_to_shape__BB7BD7E5-78B3-4945-826E-AF9E98413484" bpmnElement="_5D793276-9882-4106-963A-B7CA2D4C4579">
-        <di:waypoint x="305.74468085106383" y="498"/>
-        <di:waypoint x="249" y="137"/>
+        <di:waypoint x="1244" y="1241"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
@@ -831,7 +976,7 @@ kcontext.setVariable("shipment", shipment);</bpmn2:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_FfouYCRtEDmsw8UZgDdwSA</bpmn2:source>
-    <bpmn2:target>_FfouYCRtEDmsw8UZgDdwSA</bpmn2:target>
+    <bpmn2:source>_wVAAkCUEEDmijMpQaf44fA</bpmn2:source>
+    <bpmn2:target>_wVAAkCUEEDmijMpQaf44fA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
