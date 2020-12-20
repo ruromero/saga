@@ -5,6 +5,7 @@ metadata:
   name: orders
   labels:
     app: kafka-sagas-orders
+    saga: orders
 spec:
   selector:
     matchLabels:
@@ -13,6 +14,7 @@ spec:
     metadata:
       labels:
         app: kafka-sagas-orders
+        saga: orders
     spec:
       containers:
       - name: orders

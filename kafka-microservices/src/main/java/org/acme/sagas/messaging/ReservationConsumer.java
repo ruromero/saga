@@ -34,7 +34,7 @@ public class ReservationConsumer {
     }
 
     @Incoming("reservations")
-    @Outgoing("trips")
+    @Outgoing("orders")
     public String onReceive(String request) throws IOException {
         CloudEvent ce = objectMapper.readValue(request, CloudEvent.class);
         if (request == null || ce.getType() == null) {
